@@ -1,0 +1,126 @@
+# =========================
+# Ghostty config (from your kitty.conf)
+# Path: ~/.config/ghostty/config
+# =========================
+
+# ---- Fonts ----
+font-family = MesloLGS NF
+font-family = PingFang SC
+font-size = 16
+# (对应 kitty: font_family / bold_font / italic_font / bold_italic_font / font_size)
+# Options reference:  [oai_citation:1‡Ghostty](https://ghostty.org/docs/config/reference)
+
+# ---- Themes ----
+# theme = Xcode Dark hc
+# theme = Gruber Darker
+
+# ---- Cursor ----
+cursor-style = block
+cursor-style-blink = true
+cursor-invert-fg-bg = true
+cursor-opacity = 0.8
+# (对应 kitty: cursor_shape block + cursor_blink_interval 0)
+# Options reference:  [oai_citation:2‡Ghostty](https://ghostty.org/docs/config/reference)
+
+# ---- Mouse / Scroll ----
+mouse-scroll-multiplier = 5
+# (对应 kitty: wheel_scroll_multiplier 5.0)
+# Options reference:  [oai_citation:3‡Ghostty](https://ghostty.org/docs/config/reference)
+
+# ---- Window padding ----
+window-padding-x = 10
+window-padding-y = 10
+# (对应 kitty: window_padding_width 10.0)
+# Options reference:  [oai_citation:4‡Ghostty](https://ghostty.org/docs/config/reference)
+
+# ---- Colors ----
+background = "#252525"
+foreground = "#d4d7d5"
+
+palette = 0=#252525
+palette = 1=#dc6562
+palette = 2=#95c561
+palette = 3=#d6b55f
+palette = 4=#6aaef1
+palette = 5=#d76ed0
+palette = 6=#4aaac0
+palette = 7=#d4d7d5
+palette = 8=#676c6c
+palette = 9=#e27874
+palette = 10=#aacf7c
+palette = 11=#ddbc6a
+palette = 12=#81beef
+palette = 13=#d68fd2
+palette = 14=#5bbbc8
+palette = 15=#f9fdfc
+# (对应 kitty: background/foreground + color0~color15)
+# Options reference (background/foreground/palette):  [oai_citation:5‡Ghostty](https://ghostty.org/docs/config/reference)
+
+# ---- Scrollback ----
+# kitty 是按“行”设置 scrollback_lines=10000
+# ghostty 是按“字节”设置 scrollback-limit
+scrollback-limit = 10000000
+# 大约 10MB，体感接近几千~上万行（取决于每行长度）
+# Options reference:  [oai_citation:6‡Ghostty](https://ghostty.org/docs/config/reference)
+
+# ---- Close confirm ----
+confirm-close-surface = false
+# (对应 kitty: confirm_os_window_close 0)
+# Options reference:  [oai_citation:7‡Ghostty](https://ghostty.org/docs/config/reference)
+
+# ---- TERM ----
+env = TERM=xterm-256color
+# (对应 kitty: env TERM=xterm-256color)
+# Options reference:  [oai_citation:8‡Ghostty](https://ghostty.org/docs/config/reference)
+
+# ---- Disable auto update (match kitty update_check_interval 0) ----
+auto-update = "off"
+# Options reference:  [oai_citation:9‡Ghostty](https://ghostty.org/docs/config/reference)
+
+# ---- Keybindings (match your kitty keybinds) ----
+# kitty_mod was cmd; Ghostty uses "cmd" in triggers too.
+keybind = cmd+shift+equal=increase_font_size:2
+keybind = cmd+shift+minus=decrease_font_size:2
+keybind = cmd+shift+0=reset_font_size
+# keybind syntax reference:  [oai_citation:10‡Ghostty](https://ghostty.org/docs/config/reference)
+# increase/decrease/reset actions:  [oai_citation:11‡Ghostty](https://ghostty.org/docs/config/keybind/reference)
+
+# ---- Replacement for kitty overlay fzf (optional) ----
+# kitty had: cmd+f => overlay fzf-tmux ...
+# Ghostty doesn't have "launch overlay + run cmd" the same way,
+# but it DOES have a Quake-style "quick terminal" you can toggle.
+# You can bind cmd+f to quick terminal:
+keybind = cmd+f=toggle_quick_terminal
+
+# Quick terminal placement (feel free to tweak)
+quick-terminal-position = "top"
+quick-terminal-size = "40%"
+# Options + action reference:
+# quick-terminal-position/size:  [oai_citation:12‡Ghostty](https://ghostty.org/docs/config/reference)
+# toggle_quick_terminal:  [oai_citation:13‡Ghostty](https://ghostty.org/docs/config/keybind/reference)
+
+# ---- Bell (optional) ----
+# kitty: enable_audio_bell no
+# Ghostty macOS default doesn't play audio bell; if you want to be explicit:
+# bell-features = "no-system,no-audio"
+# Options reference:  [oai_citation:14‡Ghostty](https://ghostty.org/docs/config/reference)
+
+macos-titlebar-style = tabs
+macos-option-as-alt = true
+macos-auto-secure-input = true
+macos-secure-input-indication = true
+
+background-opacity = 0.95
+background-blur-radius = 20
+
+mouse-hide-while-typing = true
+shell-integration = zsh
+shell-integration-features = no-cursor
+bold-is-bright = true
+link-url = true
+window-vsync = true
+
+keybind = alt+left=unbind
+keybind = alt+right=unbind
+
+quit-after-last-window-closed = true
