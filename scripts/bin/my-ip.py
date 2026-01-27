@@ -1,4 +1,4 @@
-#!/Users/josejavier/.pyenv/versions/anaconda3-5.0.1/bin/python
+#!/usr/bin/env dotpy
 # <bitbar.title>external-ip</bitbar.title>
 # <bitbar.author>Jose Javier Gonzalez Ortiz</bitbar.author>
 # <bitbar.author.github>jjgo</bitbar.author.github>

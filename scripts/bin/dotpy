@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+VENV_PYTHON="$HOME/.local/share/dotfiles/venv/bin/python"
+
+if [ ! -x "$VENV_PYTHON" ]; then
+  echo "dotpy: dotfiles venv not found at $VENV_PYTHON" >&2
+  echo "dotpy: run ./install_macos.sh to create the venv" >&2
+  exit 1
+fi
+
+exec "$VENV_PYTHON" "$@"

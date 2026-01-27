@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env dotpy
 # encoding: utf-8
 
 

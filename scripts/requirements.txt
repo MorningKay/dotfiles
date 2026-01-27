@@ -1,0 +1,11 @@
+requests
+docopt
+PyPDF2
+psutil
+tqdm
+playsound==1.2.2
+pyautogui
+Pillow
+python-magic
+ffmpeg-python
+numpy
