@@ -20,10 +20,10 @@ alias_if_exists 'fdupes' 'jdupes'
 
 ## cd & ls
 alias dc="cd"
-if command -v exa > /dev/null; then
-  alias ls=exa
-  alias l="exa -1"
-  alias la="exa -a"
+if command -v eza > /dev/null; then
+  alias ls=eza
+  alias l="eza -1"
+  alias la="eza -a"
 fi
 
 mvr () {
