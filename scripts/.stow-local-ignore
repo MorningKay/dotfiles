@@ -1,0 +1,3 @@
+bin/dotpy
+bin/patch_shebangs.sh
+requirements.txt
