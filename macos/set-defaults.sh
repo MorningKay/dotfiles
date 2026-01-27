@@ -14,7 +14,7 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
 
 # Always open everything in Finder's list view. This is important.
-defaults write com.apple.Finder FXPreferredViewStyle Nlsv
+defaults write com.apple.finder FXPreferredViewStyle Nlsv
 
 # Show the ~/Library folder.
 chflags nohidden ~/Library
@@ -31,7 +31,7 @@ defaults write com.apple.dock wvous-bl-corner -int 5
 defaults write com.apple.dock wvous-bl-modifier -int 0
 
 # Hide Safari's bookmark bar.
-defaults write com.apple.Safari.plist ShowFavoritesBar -bool false
+defaults write com.apple.Safari ShowFavoritesBar -bool false
 
 # Always show Safari's "URL display" tab in the lower left on mouseover. Strangely
 # like, everyone and their LLMs on the internet thinks this is ShowStatusBar, but
@@ -40,7 +40,7 @@ defaults write com.apple.Safari ShowOverlayStatusBar -bool true
 
 # Set up Safari for development.
 defaults write com.apple.Safari.SandboxBroker ShowDevelopMenu -bool true
-defaults write com.apple.Safari.plist IncludeDevelopMenu -bool true
-defaults write com.apple.Safari.plist WebKitDeveloperExtrasEnabledPreferenceKey -bool true
-defaults write com.apple.Safari.plist "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
+defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
