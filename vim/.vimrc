@@ -293,6 +293,9 @@ set foldmethod=indent   " fold based on indent level
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set clipboard=unnamedplus
 
+" Spell
+set spellfile=~/.vim/spell/en.utf-8.add
+
 " Movement
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " move vertically by visual line
